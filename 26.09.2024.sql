@@ -65,7 +65,8 @@ values
 
 create table languages(
     id int AUTO_INCREMENT PRIMARY KEY,
-    nazwa varchar(255);
+    nazwa varchar(255)
 )
 
 insert into languages
+select distinct jezyk from  jezyki
