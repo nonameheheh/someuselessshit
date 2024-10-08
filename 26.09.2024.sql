@@ -69,4 +69,23 @@ create table languages(
 )
 
 insert into languages
+(nazwa)
 select distinct jezyk from  jezyki
+
+
+create table znane_jezyki(
+    idJezyka int, 
+    idPracownika int 
+    )
+insert into znane_jezyki
+(idPracownika, idJezyka)
+values
+(1, 1),
+(2, 1), 
+(2, 2), 
+(2, 3), 
+(4, 3),
+(4, 4),
+(3, 5),
+(3, 2),
+(3, 3)
